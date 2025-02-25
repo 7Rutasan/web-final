@@ -1,0 +1,89 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    background: #ffffff;
+  }
+.lesson-pane {
+    background: #f6f7f9;
+    padding: 20px;
+    overflow-y: auto;
+  }
+.editor-pane {
+    background: #1e1e1e;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+.editor-header {
+    background: #2c2c2c;
+    padding: 8px 12px;
+    color: #ccc;
+    display: flex;
+    align-items: center;
+  }
+.filename {
+    margin-left: 8px;
+    color: #fff;
+  }
+.editor-content {
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+#python-code {
+    flex: 1;
+    background: #1e1e1e;
+    color: #ccc;
+    border: none;
+    resize: none;
+    width: 100%;
+    padding: 10px;
+    font-family: Consolas, monospace;
+    font-size: 14px;
+    outline: none;
+  }
+.bottom-bar {
+    background: #2c2c2c;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+.run-button {
+    background: #ffd000;
+    border: none;
+    color: #000;
+    padding: 6px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+.console-pane {
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    overflow: auto;
+    font-family: Consolas, monospace;
+  }
+.console-pane pre {
+    white-space: pre-wrap;
+    margin: 0;
+  }
+.lesson-title {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #777;
+  }
+.lesson-heading {
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 8px;
+  }
+.lesson-instructions {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+  }

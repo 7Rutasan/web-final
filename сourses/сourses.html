@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap-5.3.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg ps-2 pe-2" id="navbar-container-login">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">CodeAlchemy</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+                  aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Courses</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Insights</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Contact</a>
+              </li>
+            </ul>
+            
+            <div class="d-flex align-items-center">
+              <button id="logout-btn" class="btn btn-danger me-3">Logout</button>
+              <button class="profile btn p-0">
+                <img src="../img/alien.png" alt="Profile" 
+                     style="width: 40px; height: 40px; border-radius: 50%;">
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+      
+
+
+    <div class="container-fluid">
+        <div class="search-bar d-flex justify-content-center">
+            <form class="d-flex col-lg-8" role="search">
+                <input class="form-control search-area" type="search" placeholder="Search">
+              </form>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="filters">
+                    <h3>Level</h3>
+                    <label>
+                        <input type="checkbox" name="level" value="beginner"> Beginner
+                    </label>
+                    <label>
+                        <input type="checkbox" name="level" value="intermediate"> Intermediate
+                    </label>
+                    <label>
+                        <input type="checkbox" name="level" value="advanced"> Advanced
+                    </label>
+                
+                    <div class="divider"></div>
+                
+                    <h3>Key Skills</h3>
+                    <label>
+                        <input type="checkbox" name="skills" value="python"> Python
+                    </label>
+                    <label>
+                        <input type="checkbox" name="skills" value="javascript"> JavaScript
+                    </label>
+                    <label>
+                        <input type="checkbox" name="skills" value="html"> HTML
+                    </label>
+                    <label>
+                        <input type="checkbox" name="skills" value="css"> CSS
+                    </label>
+                    <label>
+                        <input type="checkbox" name="skills" value="react"> React
+                    </label>
+                    <label>
+                        <input type="checkbox" name="skills" value="node.js"> Node.js
+                    </label>
+                    <label>
+                        <input type="checkbox" name="skills" value="sql"> SQL
+                    </label>
+                
+                    <div class="divider"></div>
+                
+                    <h3>Average Time to Study</h3>
+                    <label>
+                        <input type="checkbox" name="time" value="2-3 weeks"> 2-3 weeks
+                    </label>
+                    <label>
+                        <input type="checkbox" name="time" value="1-2 months"> 1-2 months
+                    </label>
+                    <label>
+                        <input type="checkbox" name="time" value="3-6 months"> 3-6 months
+                    </label>
+                    <label>
+                        <input type="checkbox" name="time" value="6+ months"> 6+ months
+                    </label>
+                </div>                
+            </div>
+            <div class="col-lg-8 cards-grid mt-3" style="position: relative; display: inline-block;">
+
+                <div class="card-container me-4 mb-4">
+                    <a href="#" class="card-link text-decoration-none">
+                    <div class="card-back"></div>
+                    <div class="card">
+                        <h2>Web Development</h2>
+                        <p>Learn the fundamentals of front-end and back-end development using HTML, CSS, JavaScript, and React.</p>
+                        <div class="divider"></div>
+                        <p class="skills">Key Skills: HTML, CSS, JavaScript, React</p>
+                        <div class="bottom">
+                        <span>Beginner</span>
+                        <span>3-6 months</span>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+            
+                <div class="card-container me-4 mb-4">
+                    <a href="#" class="card-link text-decoration-none">
+                    <div class="card-back"></div>
+                    <div class="card">
+                        <h2>Data Science</h2>
+                        <p>Master the fundamentals of data analysis, machine learning, and statistical modeling with Python.</p>
+                        <div class="divider"></div>
+                        <p class="skills">Key Skills: Python, Pandas, Machine Learning, SQL</p>
+                        <div class="bottom">
+                        <span>Intermediate</span>
+                        <span>4-8 months</span>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                
+                <div class="card-container me-4 mb-4">
+                    <a href="#" class="card-link text-decoration-none">
+                    <div class="card-back"></div>
+                    <div class="card">
+                        <h2>Cybersecurity</h2>
+                        <p>Understand network security, ethical hacking, and how to protect systems from cyber threats.</p>
+                        <div class="divider"></div>
+                        <p class="skills">Key Skills: Network Security, Ethical Hacking, Linux</p>
+                        <div class="bottom">
+                        <span>Advanced</span>
+                        <span>6+ months</span>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                
+                <div class="card-container me-4 mb-4">
+                    <a href="#" class="card-link text-decoration-none">
+                    <div class="card-back"></div>
+                    <div class="card">
+                        <h2>Mobile App Development</h2>
+                        <p>Develop Android and iOS apps using Flutter and React Native with a focus on UI and UX design.</p>
+                        <div class="divider"></div>
+                        <p class="skills">Key Skills: Flutter, React Native, UI/UX</p>
+                        <div class="bottom">
+                        <span>Intermediate</span>
+                        <span>3-6 months</span>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                
+                <div class="card-container me-4 mb-4">
+                    <a href="#" class="card-link text-decoration-none">
+                    <div class="card-back"></div>
+                    <div class="card">
+                        <h2>Artificial Intelligence</h2>
+                        <p>Explore deep learning, neural networks, and AI models to build intelligent applications.</p>
+                        <div class="divider"></div>
+                        <p class="skills">Key Skills: Python, Deep Learning, TensorFlow</p>
+                        <div class="bottom">
+                        <span>Advanced</span>
+                        <span>6+ months</span>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                  
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="../bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
