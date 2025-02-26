@@ -117,6 +117,308 @@
 
     </div>
 
+    <div class="container py-4 quiz">
+      <div class="row">
+        <div class="col-12" style="margin-left: 8%; margin-bottom: 50px; margin-top: 50px;">
+          <h1 class="questionnaire-heading">Find Your Ideal Learning Path</h1>
+          <p class="text-muted">Answer a few quick questions to get the right course recommendation.</p>
+        </div>
+      </div>
+    
+      <div class="row">
+        <div class="col-md-1">
+          <ul class="step-indicator">
+            <li class="active"><div class="circle">1</div></li>
+            <li><div class="circle">2</div></li>
+            <li><div class="circle">3</div></li>
+          </ul>
+        </div>
+    
+        <div class="col-md-7">
+          
+          <div class="question-block" id="step1">
+            <h4>What are you most interested in?</h4>
+            <button class="btn-option" data-step="2" data-interest="Web Development">Building Websites</button>
+            <button class="btn-option" data-step="2" data-interest="Data Science">Analyzing Data</button>
+            <button class="btn-option" data-step="2" data-interest="Cybersecurity">Protecting Systems</button>
+            <button class="btn-option" data-step="2" data-interest="Mobile Development">Creating Mobile Apps</button>
+            <button class="btn-option" data-step="2" data-interest="AI & Machine Learning">Artificial Intelligence</button>
+          </div>
+    
+          <div class="question-block d-none" id="step2">
+            <h4>What is your current experience level?</h4>
+            <button class="btn-option" data-step="3" data-level="Beginner">Beginner</button>
+            <button class="btn-option" data-step="3" data-level="Intermediate">Intermediate</button>
+            <button class="btn-option" data-step="3" data-level="Advanced">Advanced</button>
+            <a href="#" class="back-link mt-4" data-back="1">Back</a>
+          </div>
+    
+          <div class="question-block d-none" id="step3">
+            <h4>How much time can you commit per week?</h4>
+            <button class="btn-option" data-step="result" data-time="Low">Less than 5 hours</button>
+            <button class="btn-option" data-step="result" data-time="Medium">5-10 hours</button>
+            <button class="btn-option" data-step="result" data-time="High">More than 10 hours</button>
+            <a href="#" class="back-link mt-4" data-back="2">Back</a>
+          </div>
+    
+          <div class="question-block d-none" id="result">
+            <h4>Your Recommended Learning Path</h4>
+            <div id="course-recommendation"></div>
+            <a href="#" class="back-link mt-5" data-back="1">Restart Quiz</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <img src="../img/Online test-bro.svg" alt="" class="img-fluid">
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container-fluid carousel-container pt-4 mt-2 pb-5" style="background: #d4a017;">
+      <h2 class="mb-4 mt-5">Popular Courses</h2>
+    
+      <div id="coursesCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          
+          <div class="carousel-item active">
+            <div class="row justify-content-center g-4">
+              <div class="col-md-4 d-flex justify-content-center h-100">
+                <div class="card-container">
+                  <div class="card-back"></div>
+                  <div class="card">
+                    <h2>Web Development</h2>
+                    <p>Learn front-end & back-end with HTML, CSS, JavaScript, React.</p>
+                    <div class="divider"></div>
+                    <p><strong>Key Skills:</strong> HTML, CSS, JavaScript, React</p>
+                    <div class="bottom">
+                      <span>Beginner</span>
+                      <span>3-6 months</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 d-flex justify-content-center h-100">
+                <div class="card-container">
+                  <div class="card-back"></div>
+                  <div class="card">
+                    <h2>Data Science</h2>
+                    <p>Master Python, machine learning, and data analysis pipelines.</p>
+                    <div class="divider"></div>
+                    <p><strong>Key Skills:</strong> Python, Pandas, ML, SQL</p>
+                    <div class="bottom">
+                      <span>Intermediate</span>
+                      <span>4-8 months</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 d-flex justify-content-center h-100">
+                <div class="card-container">
+                  <div class="card-back"></div>
+                  <div class="card">
+                    <h2>Mobile Dev</h2>
+                    <p>Build Android/iOS apps using Flutter or React Native.</p>
+                    <div class="divider"></div>
+                    <p><strong>Key Skills:</strong> Flutter, React Native, UI/UX</p>
+                    <div class="bottom">
+                      <span>Intermediate</span>
+                      <span>3-6 months</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <div class="carousel-item">
+            <div class="row justify-content-center g-4">
+              <div class="col-md-4 d-flex justify-content-center h-100">
+                <div class="card-container">
+                  <div class="card-back"></div>
+                  <div class="card">
+                    <h2>Cybersecurity</h2>
+                    <p>Understand network security, ethical hacking, and forensics.</p>
+                    <div class="divider"></div>
+                    <p><strong>Key Skills:</strong> Network Security, Linux</p>
+                    <div class="bottom">
+                      <span>Advanced</span>
+                      <span>6+ months</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 d-flex justify-content-center h-100">
+                <div class="card-container">
+                  <div class="card-back"></div>
+                  <div class="card">
+                    <h2>AI & ML</h2>
+                    <p>Dive into deep learning, neural networks, and TensorFlow.</p>
+                    <div class="divider"></div>
+                    <p><strong>Key Skills:</strong> Deep Learning, TensorFlow</p>
+                    <div class="bottom">
+                      <span>Advanced</span>
+                      <span>6+ months</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 d-flex justify-content-center h-100">
+                <div class="card-container">
+                  <div class="card-back"></div>
+                  <div class="card">
+                    <h2>Cloud Computing</h2>
+                    <p>Leverage AWS, Azure, or GCP for scalable cloud solutions.</p>
+                    <div class="divider"></div>
+                    <p><strong>Key Skills:</strong> AWS, Azure, GCP</p>
+                    <div class="bottom">
+                      <span>Intermediate</span>
+                      <span>4-8 months</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <div class="carousel-item">
+            <div class="row justify-content-center g-4">
+              <div class="col-md-4 d-flex justify-content-center h-100">
+                <div class="card-container">
+                  <div class="card-back"></div>
+                  <div class="card">
+                    <h2>Web Development</h2>
+                    <p>Learn front-end & back-end with HTML, CSS, JavaScript, React.</p>
+                    <div class="divider"></div>
+                    <p><strong>Key Skills:</strong> HTML, CSS, JavaScript, React</p>
+                    <div class="bottom">
+                      <span>Beginner</span>
+                      <span>3-6 months</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 d-flex justify-content-center h-100">
+                <div class="card-container">
+                  <div class="card-back"></div>
+                  <div class="card">
+                    <h2>Data Science</h2>
+                    <p>Master Python, machine learning, and data analysis pipelines.</p>
+                    <div class="divider"></div>
+                    <p><strong>Key Skills:</strong> Python, Pandas, ML, SQL</p>
+                    <div class="bottom">
+                      <span>Intermediate</span>
+                      <span>4-8 months</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 d-flex justify-content-center h-100">
+                <div class="card-container">
+                  <div class="card-back"></div>
+                  <div class="card">
+                    <h2>Mobile Dev</h2>
+                    <p>Build Android/iOS apps using Flutter or React Native.</p>
+                    <div class="divider"></div>
+                    <p><strong>Key Skills:</strong> Flutter, React Native, UI/UX</p>
+                    <div class="bottom">
+                      <span>Intermediate</span>
+                      <span>3-6 months</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#coursesCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#coursesCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+
+
+    <div class="container-fluid news-container" style=" background-image: linear-gradient(to left bottom, #737373, #70717e, #687189, #5a7294, #40749f);">
+      <h2 class="news-header">Science News</h2>
+      <div class="row row-cols-1 row-cols-md-2 g-4 ms-2 me-2">
+    
+          <div class="col d-flex">
+            <div class="news-item flex-fill">
+              <img src="../img/premium_photo-1700942979302-72ef87e43525.avif" alt="Quantum Discovery" class="img-fluid">
+              <div class="news-content">
+                <div class="news-title">Quantum Computers Push Boundaries</div>
+                <div class="news-body">
+                  In a groundbreaking experiment, physicists have achieved a new level of qubit stability by harnessing advanced error-correction protocols. 
+                  This breakthrough could dramatically accelerate the development of quantum computing, enabling complex calculations 
+                  that were previously impossible with classical machines.
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col d-flex">
+            <div class="news-item flex-fill">
+              <img src="../img/photo-1707380636291-54c345a6a7a1.avif" alt="Mars Colony" class="img-fluid">
+              <div class="news-content">
+                <div class="news-title">Plan for First Mars Colony Announced</div>
+                <div class="news-body">
+                  A private aerospace corporation has revealed its ambitious blueprint for establishing a permanent human settlement on Mars by the early 2030s. 
+                  The plan details a fleet of reusable rockets to ferry supplies and crew, construction of semi-inflatable habitats leveraging Martian resources, 
+                  and the deployment of cutting-edge life support systems. 
+                </div>
+              </div>
+            </div>
+          </div>
+    
+      </div>
+
+      <button class="btn-read-more">Read more</button>
+    </div> 
+
+    <!-- Existing Navbar ... -->
+
+    <footer class="text-white py-5" style="background-color: #024c54;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h2 class="text-white">CodeAlchemy</h2>
+          </div>
+          
+          
+          <div class="col-md-4">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white text-decoration-none">Courses</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Insights</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Events</a></li>
+              <li><a href="#" class="text-white text-decoration-none">About Us</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Contact</a></li>
+            </ul>
+          </div>
+          
+          
+          <div class="col-md-4">
+            <h5>Contact Us</h5>
+            <p>
+              Email: <a href="mailto:info@example.com" class="text-white text-decoration-none">info@example.com</a><br>
+              Phone: <a href="tel:+1234567890" class="text-white text-decoration-none">+1 234 567 890</a>
+            </p>
+            <h5>Follow Us</h5>
+            <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+
+
     <script src="script.js"></script>
     <script src="../bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
 </body>
